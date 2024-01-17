@@ -14,9 +14,7 @@ I have thought up a number.
 import random
 
 
-
-
-NUM_DIGITS = 3 # constant
+NUM_DIGITS = 4 # constant
 MAX_GUESSES = 10 # constant
 
 def main():
@@ -35,6 +33,7 @@ clues would be two Fermi and one Pico.'''.format(NUM_DIGITS))
     while True:
         # This stores the secret number the player needs to guess:
         secretNum = getSecretNum()
+        #secretNum = '248'
         print('I have thought up a number.')
         print('You have {} guesses to get it.'.format(MAX_GUESSES))
 
@@ -48,6 +47,7 @@ clues would be two Fermi and one Pico.'''.format(NUM_DIGITS))
 
             clues = getClues(guess, secretNum)
             print(clues)
+            numGuesses += 1
 
             if guess == secretNum:
                 break # They are correct, so break out of this loop.
