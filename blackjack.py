@@ -75,25 +75,5 @@ def stand(player_hand):
 
 
 
-player_hand = [("Spades", "King"), ("Hearts",4), ("Diamonds", "Ace")]
-# print("Before hit(): ", player_hand)
-
-# hit(player_hand)
-
-# print("After hit(): ", player_hand)
-player_hand_value = calculate_hand_value(player_hand)
-
-print("List Before hit: ", player_hand)
-print("value Before hit: ", player_hand_value)
-
-
-hit(player_hand)
-value_after_hit = calculate_hand_value(player_hand)
-
-print("List After hit: ", player_hand)
-print("After hit: ", value_after_hit)
-
-
-
 
 # winning or losing
